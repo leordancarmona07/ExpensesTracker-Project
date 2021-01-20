@@ -1,25 +1,15 @@
 .view {
     background: url("../assets/Image/background.jpg")no-repeat center center;
     background-size: cover;
-    height: 100vh;
+    height: 150vh;
     background-attachment: fixed;
 }
-::ng-deep .carousel{
-    width: 80%;
-    margin: 0 auto;
-}
-::ng-deep .navCss nav
-   {
-         background-color: #000000fd;
-   }
 
 ::ng-deep .navbar-nav .nav-item{
        font-weight: 100;
        font-size: large;
    }
-::ng-deep  .carousel-caption{
-        border-left: 10px solid;
-   }
+
 .top-nav-collapse {
     background-color: #4285F4;
 }
@@ -33,10 +23,4 @@
 #myLogo{
     width: 50px;
     height: 50px;
-}
-
-h1{
-    // color: red;
-    font-weight: 700;
-    font-size: 55px;
 }

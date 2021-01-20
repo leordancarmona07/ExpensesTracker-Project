@@ -1,0 +1,57 @@
+
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: rgba(0, 0, 0, 0.336);
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(20%);
+ -webkit-transform:translateX(20%);	
+ transform:translateX(20%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 5s linear infinite;
+ -webkit-animation: scroll-left 5s linear infinite;
+ animation: scroll-left 5s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(20%); }
+ 100% { -moz-transform: translateX(-10%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(20%); }
+ 100% { -webkit-transform: translateX(-10%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(20%); /* Browser bug fix */
+ -webkit-transform: translateX(20%); /* Browser bug fix */
+ transform: translateX(20%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-10%); /* Browser bug fix */
+ -webkit-transform: translateX(-10%); /* Browser bug fix */
+ transform: translateX(-10%); 
+ }
+}
+.title{
+    text-align: left;
+    margin: 3%;
+    padding-left: 1%;
+    border-left: 10px solid red;
+    width: max-content;
+
+}
+h1{
+    color: red;
+    text-shadow: 5px 5px 5px black;
+    font-size: 5rem;
+}
