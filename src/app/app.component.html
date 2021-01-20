@@ -1,2 +1,64 @@
-<!-- <app-sign-in></app-sign-in> -->
-<app-sign-up></app-sign-up>
+<header class="h-100">
+    <mdb-navbar SideClass="navbar fixed-top stylish-color-dark navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav waves-light" class="navCss" [containerInside]="false">
+      <mdb-navbar-brand>
+        <a class="logo navbar-brand" href="#">
+          <img id="myLogo" src="../../assets/Image/logo.png" alt="">
+        </a>
+      </mdb-navbar-brand>
+      <links>
+        <ul class="navbar-nav" style="margin-left: 75%;" >
+          <li class="nav-item " mdbWavesEffect>
+            <a class="nav-link" routerLink="/about">About
+            </a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link" routerLink="/sign-up" >Sign Up</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link" routerLink="/sign-in">Sign In</a>
+          </li>
+        </ul>
+      </links>
+    </mdb-navbar>
+  </header>
+  <!--Main Navigation-->
+   <!-- /.Main -->
+    <div class="view intro-2">
+        <div class="full-bg-img">
+            <div class="mask rgba-black-light flex-center">
+              <div class="container text-center white-text wow fadeInUp">
+                <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'" >
+                    <mdb-carousel-item data-mdb-interval="5">
+                        <img class="d-block w-100" src="../assets/Image/slide1.png" alt="First slide">
+                        <div class="mask rgba-stylish-strong waves-light" mdbWavesEffect>
+                            <div class="carousel-caption ">
+                                <h1 >{{title}}</h1>
+                                <h5> Helps you keep a list of your expenses!</h5>
+                              </div>
+                        </div>
+                    </mdb-carousel-item>
+                    <mdb-carousel-item data-mdb-interval="5">
+                        <img class="d-block w-100" src="../assets/Image/slide2.png" alt="Second slide">
+                        <div class="mask rgba-stylish-strong waves-light" mdbWavesEffect>
+                            <div class="carousel-caption">
+                                <h1 >{{title}}</h1>
+                                <h5> Helps you analyze your expenses summary within a period of time!</h5>
+                              </div>
+                        </div>
+                    </mdb-carousel-item>
+                    <mdb-carousel-item data-mdb-interval="5">
+                        <img class="d-block w-100" src="../assets/Image/slide3.png" alt="Third slide">
+                        <div class="mask rgba-stylish-strong waves-light" mdbWavesEffect>
+                            <div class="carousel-caption">
+                                <h1 >{{title}}</h1>
+                                <h5> Helps you minimize your expenses and maximize your savings!</h5>
+                              </div>
+                        </div>
+                    </mdb-carousel-item>
+                  </mdb-carousel>
+              </div>
+          </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet> 
+    <app-footer></app-footer>
