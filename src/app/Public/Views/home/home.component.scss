@@ -44,14 +44,15 @@
 }
 .title{
     text-align: left;
-    margin: 3%;
+    margin: auto 0;
     padding-left: 1%;
     border-left: 10px solid red;
-    width: max-content;
+    width: fit-content;
 
 }
 h1{
     color: red;
     text-shadow: 5px 5px 5px black;
-    font-size: 5rem;
+    font-size: 500%;
 }
+

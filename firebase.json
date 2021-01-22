@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/expenses-tracker-project",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
