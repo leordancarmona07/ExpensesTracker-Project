@@ -12,6 +12,7 @@ import { FooterComponent } from './Navigation/footer/footer.component';
 import { HeaderComponent } from './Navigation/header/header.component';
 import { HomeComponent } from './Public/Views/home/home.component';
 import { AboutComponent } from './Public/Views/about/about.component';
+
 @NgModule({
   declarations: [
     AppComponent,
