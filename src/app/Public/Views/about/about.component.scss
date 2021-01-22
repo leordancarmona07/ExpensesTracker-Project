@@ -1,19 +1,19 @@
+
 .title{
     text-align: left;
     margin: 0 auto;
     width: fit-content;
     padding-left: 1%;
-    border-left: 10px solid red;
-    
+    border-left: 10px solid lightgreen;
+    width: max-content;
 }
+
 h1{
-    color: red;
+    color: gold;
     text-shadow: 5px 5px 5px black;
     font-size: 500%;
 }
 
 p{
-    padding: 0 2%;
-    background-color: rgba(0, 0, 0, 0.24);
-    text-align: justify;
+   font-size: 18px;
 }
