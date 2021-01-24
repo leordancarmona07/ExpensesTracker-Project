@@ -1,7 +1,12 @@
+h5 {
+    text-align: center;
+}
+
 .card {
     top: 3rem;
+    margin: auto;
     width: 25rem;;
-    height: 36rem;
+    height: 30rem;
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     opacity: 90%;
 }
@@ -17,13 +22,15 @@
 }
 
 label {
-    text-align: left;
+    text-align: right;
 }
 
-.md-form .prefix {
-    left: 0.2rem;
+button {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1rem;
 }
 
-// .md-form .form-control {
-//     left: 3rem;
-// }
+button.save {
+    margin-left: 4.5rem;
+}

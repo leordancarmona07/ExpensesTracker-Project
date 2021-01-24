@@ -2,44 +2,46 @@
     <div class="card">
         <div class="card-body">
             <img src="../../../assets/Image/log.png" alt="" width="90px;" height="85px;">
-            <h5 class="card-title mt-4 mb-4">Sign Up</h5>
+            <h5 class="card-title mt-4 mb-3">Sign Up</h5>
             <form>
                 <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row mb-2">
+                <div class="row">
                     <div class="col">
-                        <div class="form-outline">
-                            <input type="text" id="firstName" class="form-control" />
-                            <label class="form-label" for="firstName">First name</label>
+                        <div class="md-form">
+                            <mdb-icon fas icon="user-alt" class="prefix"></mdb-icon>
+                            <input mdbInput type="text" id="firstname" class="form-control">
+                            <label for="firstname" class="" >Firstname</label>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="form-outline">
-                            <input type="text" id="lastName" class="form-control" />
-                            <label class="form-label" for="lastName">Last name</label>
+                        <div class="md-form">
+                           
+                            <input mdbInput type="text" id="lastname" class="form-control">
+                            <label for="lastname" class="" >Lastname</label>
                         </div>
                     </div>
-                </div>
-    
-                <!-- Email input -->
-                <div class="form-outline mb-2">
-                    <input type="email" id="email" class="form-control" />
-                    <label class="form-label" for="email">Email address</label>
-                </div>
-    
-                <!-- Password input -->
-                <div class="form-outline mb-2">
-                    <input type="password" id="password" class="form-control" />
-                    <label class="form-label" for="password">Password</label>
                 </div>
 
-                <div class="form-outline mb-2">
-                    <input type="password" id="confPassword" class="form-control" />
-                    <label class="form-label" for="confPassword">Confirm Password</label>
+                <!-- Email input -->
+                <div class="md-form mt-1">
+                    <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>
+                    <input mdbInput type="text" id="email" class="form-control">
+                    <label for="email" class="" >Email</label>
                 </div>
-    
+                <!-- Password input -->
+                <div class="md-form mt-1">
+                    <mdb-icon fas icon="key" class="prefix"></mdb-icon>
+                    <input mdbInput type="text" id="password" class="form-control">
+                    <label for="password" class="" >Password</label>
+                </div>
+                <div class="md-form mt-1">
+                    <mdb-icon fas icon="key" class="prefix"></mdb-icon>
+                    <input mdbInput type="text" id="password" class="form-control">
+                    <label for="password" class="" >Password</label>
+                </div>
+
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-success btn-block mb-3">Sign up</button>
-    
+                <button type="submit" mdbBtn color="success" class="btn-block mb-3" mdbWavesEffect>Sign Up</button>
                 <div class="text-center">
                     <p>Already signed up? <a href="#!">Login</a></p>
                 </div>

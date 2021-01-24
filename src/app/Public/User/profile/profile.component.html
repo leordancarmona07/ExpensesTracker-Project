@@ -1,0 +1,37 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Profile</li>
+    </ol>
+</nav>
+<div class="card  w-75 mt-5 mx-auto">
+    <div class="card-body">
+        <h2 class="display-6 mt-5">Basic Info</h2>
+        <!-- <div class="md-form mx-4">
+            <input mdbInput type="text" id="form1" class="form-control">
+            <label for="form1" class="">Name</label>
+          </div>
+          <div class="md-form mx-4">
+            <input mdbInput type="text" id="form1" class="form-control">
+            <label for="form1" class="">Username</label>
+          </div>
+          <div class="md-form mx-4">
+            <input mdbInput type="text" id="form1" class="form-control">
+            <label for="form1" class="">Password</label>
+          </div> -->
+        <table class="table table-hover w-75 mt-5">
+            <thead>
+                <tr>
+                    <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr mdbTableCol *ngFor="let el of elements">
+                    <th scope="row">{{el.date}}</th>
+                    <td>{{el.amount}}</td>
+                    <td><button type="submit" mdbBtn color="success" mdbWavesEffect>{{el.action}}</button><button
+                            type="submit" mdbBtn color="danger" mdbWavesEffect>{{el.newAction}}</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

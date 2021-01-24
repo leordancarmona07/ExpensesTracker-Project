@@ -1,5 +1,9 @@
 {
   "projects": {
+<<<<<<< HEAD
+    "default": "expenses-tracker-57e6e"
+=======
     "default": "expensestracker-project"
+>>>>>>> 6847d1449cf535b5c0eb277a9219ac1db2863fff
   }
 }
